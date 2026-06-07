@@ -1,0 +1,6 @@
+{
+  "name": "yourAI",
+  "description": "A premium AI Agent platform offering high-fidelity agentic control, conversational interaction, system analytics, and detailed activity logging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

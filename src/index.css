@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Geist:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  
+  --color-surface-dim: #131315;
+  --color-surface-bright: #39393b;
+  --color-surface-container-lowest: #0e0e10;
+  --color-surface-container-low: #1b1b1d;
+  --color-surface-container: #1f1f21;
+  --color-surface-container-high: #2a2a2c;
+  --color-surface-container-highest: #353437;
+  --color-primary-fixed-dim: #00dbe9;
+  --color-outline-variant: #3b494b;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 219, 233, 0.15);
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
